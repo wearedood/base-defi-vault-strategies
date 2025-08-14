@@ -279,3 +279,65 @@ This project is built for the Base Builder Rewards 2025 contest, showcasing adva
 --- 
 
 **⚠️ Disclaimer**: DeFi investments carry inherent risks. Please do your own research and never invest more than you can afford to lose. Past performance does not guarantee future results.
+
+
+## 🏗️ Architecture
+
+The Base DeFi Vault Strategies project follows a modular architecture designed for scalability and maintainability:
+
+### Core Components
+
+- **VaultFactory**: Deploys and manages vault instances
+- **BaseVault**: Abstract base contract for all vault implementations
+- **StrategyManager**: Handles strategy allocation and rebalancing
+- **RiskAssessment**: Evaluates and monitors risk metrics
+- **YieldOptimizer**: Maximizes returns through automated compounding
+
+### Smart Contract Structure
+
+```
+contracts/
+├── core/
+│   ├── VaultFactory.sol
+│   ├── BaseVault.sol
+│   └── StrategyManager.sol
+├── strategies/
+│   ├── YieldFarmingStrategy.sol
+│   ├── LiquidityProviderStrategy.sol
+│   └── LendingStrategy.sol
+├── utils/
+│   ├── RiskAssessment.sol
+│   └── PriceOracle.sol
+└── interfaces/
+    ├── IVault.sol
+    └── IStrategy.sol
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js v18 or higher
+- Hardhat development environment
+- Base testnet/mainnet access
+- MetaMask or compatible wallet
+
+- ### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/base-defi-vault-strategies.git
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Compile contracts
+npm run compile
+
+# Run tests
+npm run test
+```

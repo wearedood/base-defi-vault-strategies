@@ -276,6 +276,6 @@ This project is built for the Base Builder Rewards 2025 contest, showcasing adva
 - **Twitter**: [@wearedood](https://twitter.com/wearedood)
 - **Email**: support@wearedood.com
 
----
+--- 
 
 **⚠️ Disclaimer**: DeFi investments carry inherent risks. Please do your own research and never invest more than you can afford to lose. Past performance does not guarantee future results.
